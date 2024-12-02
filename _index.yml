@@ -1,0 +1,27 @@
+---
+indexpage:
+  title: BlueXP  Workload Factory for Builders 文件
+  lead: 在 BlueXP  工作負載工廠的 ONTAP 檔案系統儲存設備 FSX 之上，建立及管理軟體開發專案。
+  tiles:
+  - title: 開始使用
+    links:
+    - title: 版本資訊
+      url: "/whats-new.html"
+    - title: 瞭解 Builders
+      url: "/learn-builders.html"
+    - title: 快速入門
+      url: "/quick-start-builders.html"
+  - title: 使用 Builders
+    links:
+    - title: 管理專案
+      url: "/manage-projects.html"
+    - title: 建立工作區
+      url: "/create-workspaces.html"
+    - title: 使用 CodeBox 自動化
+      url: "/automate-codebox.html"
+  - title: 知識與支援
+    links:
+    - title: 註冊以取得支援
+      url: "/support-registration.html"
+    - title: 取得協助
+      url: "/get-help-builders.html"

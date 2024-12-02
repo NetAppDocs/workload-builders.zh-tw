@@ -1,0 +1,133 @@
+---
+sidebar: sidebar 
+permalink: manage-projects.html 
+keywords: Microsoft SQL Server instance, server instance, manage host, view host, database host, database instance, manage, unmanage 
+summary: 在資料庫的工作負載工廠中管理 Microsoft SQL Server 執行個體。 
+---
+= 管理 Builders 專案
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以管理 Builders 專案，以控制如何在 BlueXP  工作負載工廠為 Builders 管理每個專案的程式碼和成品。
+
+
+
+== 建立專案
+
+您可以建立新的 Builders 專案，以便利用 Amazon FSX for NetApp ONTAP 檔案系統的資料保護功能來處理程式碼和成品。
+
+.步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 在「建置者」方塊中，選取 * 建立專案 * 。
+. 在「建立專案」頁面上，提供下列項目：
++
+.. * 專案名稱 * ：輸入專案名稱。
+.. * 說明 * ：輸入專案的說明。
+.. * 檔案系統 * ：提供下列項目：
++
+... * 認證 * ：選取要使用的 Amazon AWS 認證。建構者會使用這些認證來探索可用於此專案的 ONTAP 檔案系統的 FSX ，以及建立專案的複本和快照。
+... * 區域 * ：選取此適用於 ONTAP 檔案系統的 FSX 所在的區域。
+... *FSX for ONTAP filesystem* ：選擇要用於此專案的 ONTAP 檔案系統 FSX 。
++
+您只能選取已設定連結的檔案系統。 https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["深入瞭解連結"^]。
+
+... * 選擇 Volume * ：選取要儲存專案的磁碟區； Builders 使用此磁碟區作為軟體儲存庫。
++
+您只能選取設定為 NFS 共用的磁碟區。
+
+
+
+.. * 營運原則 * ：限制專案複本：
++
+... * 以天數為單位的最大保留天數 * ：輸入應保留複本的最大天數。在這段天數之後，工作負載原廠會移除複本。
+... * 每個使用者或群組的最大複本數 * ：輸入可為使用者或群組配置的最大複本數。
+... * 以 GiB* 表示的最大複本大小：在專案複本的 GiB 中輸入最大大小。
+
+
+.. * 存取原則 * ：明確授予特定使用者或群組專案存取權：
++
+... * 原則強制執行範圍 * ：輸入單一 IP 位址或 IP 位址範圍，將專案存取限制為僅限這些 IP 位址或範圍。
++
+例如： `172.16.0.0/24`
+
+... * 使用者或群組識別碼 * ：輸入使用者或群組識別碼，僅限這些使用者或群組存取專案。
++
+例如： `User1234`
+
+
+
+
+
+. 選擇* Create *（建立*）。
+
+
+.結果
+專案隨即建立，並顯示在「專案」頁面的專案清單中。
+
+
+
+== 檢視現有專案
+
+您可以依照下列步驟，檢視在 BlueXP  工作負載工廠為建置商所建立的現有專案。
+
+.步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 在 [ 建置者 ] 方塊中，選取 [ 前往專案 ] 頁面 * 。
+. 檢視「專案」頁面上列出的現有專案。
+
+
+
+
+== 編輯專案
+
+您可以隨時編輯專案的設定。
+
+.步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 在 [ 建置者 ] 方塊中，選取 [ 前往專案 ] 頁面 * 。
+. 在「專案」頁面上，針對您要編輯的專案選取image:icon-action.png["選項按鈕"]。
+. 對專案組態進行任何必要的變更。
+. 選擇*保存*。
+
+
+.步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 在 [ 建置者 ] 方塊中，選取 [ 前往專案 ] 頁面 * 。
+. 在「專案」頁面上，針對您要建立快照的專案選取image:icon-action.png["選項按鈕"]。
+. 在產生的功能表中，選取 * 建立快照 * 。
+. 在 * 建立 SnapShot * 對話方塊中，選擇快照的名稱，然後選取 * 建立 * 。
+
+
+
+
+== 檢視專案的工作區
+
+專案的複本或快照稱為工作區。建立工作區時，只要專案的營運原則允許，就會保留工作區。您可以依照下列步驟來檢視專案的現有工作區。
+
+.步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 在 [ 建置者 ] 方塊中，選取 [ 前往專案 ] 頁面 * 。
+. 在「專案」頁面上，選擇專案，然後選取 * 檢視 * 。
+. 檢視此專案所有工作區的狀態和詳細資料。
+. 如果您看到工作區的警示或警告，請將游標移至警示或警告圖示上方，以查看原因。
+
+
+
+
+== 刪除專案
+
+您可以依照下列步驟，在不再需要時刪除專案。
+
+.步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 在 [ 建置者 ] 方塊中，選取 [ 前往專案 ] 頁面 * 。
+. 在「專案」頁面上，針對您要刪除的專案選取image:icon-action.png["選項按鈕"]。
+. 選擇*刪除*。
+. 在確認對話方塊中，選取 * 刪除 * 。
+
+
+.結果
+專案隨即刪除，且任何與專案相關的程式碼或成品都會從 Volume 中刪除。保留專案的快照和複本。

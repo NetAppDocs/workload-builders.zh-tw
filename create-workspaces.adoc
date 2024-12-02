@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: create-workspaces.html 
+keywords: manage, workspace, snapshot, project 
+summary: BlueXP  WorkWorkload Factory for Builders 是以專案快照為基礎之專案的永久代表。您可以將工作區建立為 Builders 專案的一部分。 
+---
+= 建立工作區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP  WorkWorkload Factory for Builders 是專案在特定時間點的永久代表。工作區是以專案快照為基礎來建立。您可以在 Builders 專案中建立新的工作區。您可以從 Perforce UI 建立工作區。
+
+.開始之前
+確保您已將 Builders 與 Perforce Helix 視覺用戶端整合。如需詳細資訊、請參閱 link:integrate-perforce.html["將 Builders 與 Perforce 整合"^] 。
+
+.步驟
+. 登入 Perforce 。
+. 在 Perforce 功能表中，選取 * 檢視 * > * WF* 。
++
+工作負載原廠登入畫面會出現在 Perforce UI 中。
+
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 選取 * 建立工作區 * 。
+. 在「建立工作區專案」頁面上，提供下列項目：
++
+.. 選取要作為工作區基礎的快照。
+.. 輸入工作區名稱。
+.. 您也可以輸入使用者識別碼來宣告工作區。此識別碼應符合將使用此工作區之開發人員的強制使用者 ID 。
+
+
+. 選擇* Create *（建立*）。
+
+
+.結果
+隨即建立工作區，並顯示在「工作區」頁面的工作區清單中。

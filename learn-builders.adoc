@@ -1,0 +1,100 @@
+---
+sidebar: sidebar 
+permalink: learn-builders.html 
+keywords: software builders, development, benefits 
+summary: 適用於 Builders 的 BlueXP  工作負載工廠是軟體建置者的快速建置環境建立工具。 
+---
+= 瞭解適用於 Builders 的 BlueXP  工作負載工廠
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+適用於 Builders 的 BlueXP  工作負載工廠是軟體建置者的快速建置環境建立工具。它能快速設定個人開發環境，節省時間，並為開發人員提供自助服務，同時讓 DevOps 團隊能夠保留基礎架構的控制權。使用 Builders ，軟體開發人員可以快速建立工作區，而不需要專門的資料儲存設備，也不需要瞭解開發基礎架構。
+
+
+
+== 什麼是建築商的 BlueXP  工作負載工廠？
+
+BlueXP  Workload Factory for Builders 旨在簡化開發人員管理及與不同版本軟體互動的方式。建構者可與 Perforce Helix Core 無縫整合，即時提供軟體版本的複本，為開發， QA 和 CI/CD 程序建立現成的工作空間。
+
+利用 Builders ，您可以輕鬆建立專案，並指派代表軟體環境及其成品的 Volume 。更新軟體時，您可以拍攝磁碟區的快照，擷取當時軟體的狀態。這表示您可以立即存取任何版本的軟體，而無需重新同步版本控制系統，節省寶貴的時間與資源。
+
+建置者運用 ONTAP 的快照和複製功能，可強化您的開發工作流程，讓您快速存取多個版本的軟體，加速開發週期，並協助縮短上市時間。
+
+如需工作負載工廠的詳細資訊，請link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["工作負載原廠總覽"^]參閱。
+
+
+
+== 適用於 Builders 功能的 BlueXP  工作負載工廠
+
+適用於 Builders 的 BlueXP  工作負載工廠提供下列功能：
+
+* 建立，編輯及移除專案
+* 建立已定義軟體版本的快照
+* 建立及刪除工作區（根據複本）
+* 建立存取原則以控制專案的存取
+* 分析每個專案的容量使用率
+* 控制每個專案的複本大小限制和複本保留
+* 與 Perforce 等版本控制系統整合
+
+
+
+
+== Builders 中的專案和工作區
+
+使用 Builders 時，您可以建立專案，並指派代表軟體環境及其成品的 Volume 。每次您建立新版軟體時，都需要重新同步磁碟區資料，並建立專案快照，將磁碟區狀態標示為已知版本。專案來源 Volume 可能會取得滾動更新，並有多個快照來標記多個版本。您可以立即將每個快照當成即時複製，這是專屬或共享的可編輯儲存庫，可供開發人員， QA 或建置程序使用。特定軟體版本內容中的複本是工作區。
+
+
+
+== 工作負載工廠的作業模式
+
+三種不同的作業模式（ _ 基本 _ ， _ 讀取 _ 和 _ 自動化 _ ），提供靈活的選項，可在工作負載工廠內外進行部署。在 _base_ 模式下，利用程式碼片段在工作負載工廠外部使用，以零信任的方式立即獲得價值。在 _ 讀取 _ 和 _ 自動化 _ 模式中以遞增信任獲得遞增價值。
+
+深入瞭解 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["工作負載工廠的作業模式"^]。
+
+
+
+== 使用工作負載原廠 CodeBox 自動化
+
+工作負載工廠採用 _Codebox_ 內建自動化功能。Codebox 提供下列自動化優點：
+
+* * 程式碼片段產生 * ：基礎架構即程式碼（ IAC ）片段是在資源建立期間產生，可與現有的協調工作流程無縫整合。
+* * 基礎架構即程式碼協同作業 * ： Codebox 是基礎架構即程式碼（ IAC ）聯合試驗計畫，可協助開發人員和 DevOps 產生程式碼，以執行工作負載工廠所支援的任何作業。
+* * 程式碼檢視器與自動化目錄 * ： Codebox 提供程式碼檢視器、可快速分析自動化、並提供自動化目錄、供日後快速重複使用。
+
+
+
+
+== 成本
+
+使用工作負載工廠的 Builders 功能不需花費任何成本。
+
+
+
+== 授權
+
+NetApp 不需要特殊授權即可使用工作負載工廠的建置者功能。
+
+
+
+=== 支援的地區
+
+支援 ONTAP 適用的 FSX 的所有商業地區均支援建置者。 https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["檢視支援的Amazon地區。"^]
+
+不支援下列 AWS 區域：
+
+* 中國地區
+* GovCloud（美國）地區
+* 秘密雲端
+* Top Secret Cloud
+
+
+
+
+== 取得協助
+
+Amazon FSX for NetApp ONTAP 的功能是AWS的第一方解決方案。如需與適用於 ONTAP 檔案系統、基礎架構或任何使用此服務的解決方案的 FSX 相關的問題或技術支援問題、請使用 AWS 管理主控台的支援中心、開啟 AWS 的支援案例。選取「FSXfor ONTAP Sf1」服務和適當的類別。提供建立AWS支援案例所需的其餘資訊。
+
+有關工作負載工廠或工作負載工廠應用程式與服務的一般問題，請link:get-help-builders.html["取得 Builders for Workload Factory 的協助"]參閱。

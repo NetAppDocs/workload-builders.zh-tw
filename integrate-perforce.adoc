@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: integrate-perforce.html 
+keywords: software builders, integrate, integration, Perforce 
+summary: 瞭解如何將 Builders 與 Perforce 整合。 
+---
+= 將 Builders 與 Perforce 整合
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+將 Builders 與 Perforce Helix Visual Client （ P4V ）整合，讓開發人員可以使用 Perforce CLI 管理工作區。這可讓開發人員在專案和工作區之間快速切換，節省開發時間。
+
+.步驟
+. 下載 https://builders.console.workloads.netapp.com/p4v["P4V 整合檔案"^]。
+. 開啟 P4V 並移至 * 工具 * > * 管理工具 * > * HTML 索引標籤 * 。
+. 選取 * 匯入 HTML 索引標籤 * 。
+. 選取 P4V 整合 XML 檔案，然後選取 * Import * （ * 匯入 * ）。
+. 前往 * 檢視 * > * 工作負載工廠 * 。
+
+
+.結果
+Builders Web UI 的 BlueXP  工作負載工廠會在 P4V 用戶端中顯示為 HTML 索引標籤。
+
+.接下來呢？
+link:manage-projects.html["使用移轉顧問建立 Amazon EC2 部署計畫"]。

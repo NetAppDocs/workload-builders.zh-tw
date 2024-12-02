@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: requirements-builders.html 
+keywords: Builders, FSx, project, projects 
+summary: 在開始使用適用於 Builders 的 BlueXP  工作負載工廠之前，請先確定工作負載工廠和 AWS 已正確設定。這包括讓 AWS 登入認證，部署的 ONTAP 檔案系統 FSX 等。 
+---
+= 建構者需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在開始使用適用於 Builders 的 BlueXP  工作負載工廠之前，請先確定工作負載工廠和 AWS 已正確設定。這包括讓 AWS 登入認證，部署的 ONTAP 檔案系統 FSX 等。
+
+工作負載工廠登入與帳戶:: 您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在工作負載工廠設定帳戶"^]使用其中一項登入 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+AWS 認證與權限:: 您需要以自動化權限將 AWS 認證新增至工作負載工廠，這表示您將以 Builders 的 _AIL_ 模式使用工作負載工廠。
+
+
+目前不支援 _ 基本 _ 模式和 _ 讀取 _ 模式權限。https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["瞭解如何將 AWS 認證新增至工作負載工廠"^]
+
+適用於 ONTAP 檔案系統的 FSX:: 您至少需要一個適用於 ONTAP 檔案系統的 FSX ：
++
+--
+* Builders 將使用檔案系統來儲存您建立的專案和工作區。
++
+此適用於 ONTAP 檔案系統的 FSX 必須使用 FlexVol Volume 。不支援支援的支援。FlexGroup
+
+* 您需要知道 AWS 區域、 VPC 和子網路、這些都是 AWS FSX for ONTAP 檔案系統所在的位置。
+* 檔案系統中至少需要一個具有下列組態的磁碟區：
++
+** 該 Volume 必須設定為 NFS 共用。
+** 檔案系統必須使用連結進行設定。 https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["深入瞭解連結"^]。
+
+
+* 您需要考慮要套用至屬於此部署一部分的 AWS 資源的標記金鑰 / 值配對（選用）。
++
+https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["瞭解如何部署及管理適用於 ONTAP 檔案系統的 FSX"^]
+
+
+
+--
+

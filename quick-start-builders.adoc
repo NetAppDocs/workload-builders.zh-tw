@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: quick-start-builders.html 
+keywords: requirements, basic mode, read mode, automate mode 
+summary: 資料庫有三種不同的模式、要求不同。 
+---
+= 建築商快速入門
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+開始建立 Builders 專案。系統管理員和團隊主管可以使用 Builders 來管理開發人員團隊的專案和工作區。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]登入工作負載工廠
+[role="quick-margin-para"]
+您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在工作負載工廠設定帳戶"^]使用其中一項登入 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 將 AWS 認證和權限新增至您的帳戶
+[role="quick-margin-para"]
+您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。以讀取或自動化模式將 AWS 認證新增至工作負載工廠，讓您的工作負載工廠帳戶擁有為 ONTAP 檔案系統建立和管理 FSX ，以及部署和管理 Builders 專案所需的權限。
+
+[role="quick-margin-para"]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["瞭解如何新增認證和權限"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]設定您的環境以符合 Builders 的要求
+[role="quick-margin-para"]
+您需要部署並探索 ONTAP 檔案系統的 FSX ，其中包含至少一個已設定為 NFS 共用的磁碟區。
+
+[role="quick-margin-para"]
+link:requirements-builders.html["深入瞭解 Builders 要求"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]與其他服務整合
+[role="quick-margin-para"]
+使用工作負載 Factory REST API ，將 Builders 與其他服務整合，例如服務入口網站或 Perforce Helix Core 。
+
+[role="quick-margin-para"]
+link:integrate-perforce.html["瞭解如何將 Builders 與 Perforce 整合"^]。
+
+.下一步
+您現在可以link:manage-projects.html["建立專案"]為開發人員團隊提供快速有效的程式碼和成品管理。
