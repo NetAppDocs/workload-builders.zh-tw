@@ -4,7 +4,7 @@ permalink: create-workspaces.html
 keywords: manage, workspace, snapshot, project 
 summary: BlueXP  WorkWorkload Factory for Builders 是以專案快照為基礎之專案的永久代表。您可以將工作區建立為 Builders 專案的一部分。 
 ---
-= 建立工作區
+= 建立 Builders 工作區
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

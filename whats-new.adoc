@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, workload factory, builders, workload factory' 
 summary: 瞭解資料庫工作負載工廠的新功能。 
 ---
-= 新功能
+= 適用於 Builders 的 BlueXP  工作負載工廠的新功能
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
