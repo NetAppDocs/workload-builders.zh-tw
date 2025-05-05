@@ -14,10 +14,10 @@ summary: 在開始使用適用於 Builders 的 BlueXP  工作負載工廠之前
 在開始使用適用於 Builders 的 BlueXP  工作負載工廠之前，請先確定工作負載工廠和 AWS 已正確設定。這包括讓 AWS 登入認證，部署的 ONTAP 檔案系統 FSX 等。
 
 工作負載工廠登入與帳戶:: 您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在工作負載工廠設定帳戶"^]使用其中一項登入 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
-AWS 認證與權限:: 您需要以自動化權限將 AWS 認證新增至工作負載工廠，這表示您將以 Builders 的 _AIL_ 模式使用工作負載工廠。
+AWS 認證與權限:: 您需要將 AWS 認證新增至具有讀取 / 寫入權限的工作負載工廠，這表示您將以 Builders 的讀取 / 寫入模式使用工作負載工廠。
 
 
-目前不支援 _ 基本 _ 模式和 _ 讀取 _ 模式權限。https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["瞭解如何將 AWS 認證新增至工作負載工廠"^]
+目前不支援 _ 基本 _ 模式和 _ 唯讀 _ 模式權限。 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["瞭解如何將 AWS 認證新增至工作負載工廠"^]
 
 適用於 ONTAP 檔案系統的 FSX:: 您至少需要一個適用於 ONTAP 檔案系統的 FSX ：
 +
