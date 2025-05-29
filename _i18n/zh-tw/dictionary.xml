@@ -353,4 +353,10 @@
   <block id="98c15024a0a6463353585181f922a6d8" category="list-text">您需要將 AWS 認證新增至具有讀取 / 寫入權限的工作負載工廠，這表示您將以 Builders 的讀取 / 寫入模式使用工作負載工廠。</block>
   <block id="19e72e9857cc00ad57d29107d2e5f1fb" category="paragraph">目前不支援 _ 基本 _ 模式和 _ 唯讀 _ 模式權限。 <block ref="ced1a4827b1ea3c1da0273c3d73fdd46" category="inline-link-rx"></block></block>
   <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">2025 年 4 月 5 日</block>
+  <block id="d585a12eb322284819964d656e33d798" category="summary">建立快照和複本，保護您的建置者專案。</block>
+  <block id="69b33a7dae155d4aeca7bb5e1abb1cce" category="doc">保護建置商專案的 BlueXP  工作負載工廠</block>
+  <block id="0deec7e6c3ce920634e346d6726ee3dc" category="paragraph">直接從工作負載工廠建立隨選快照，保護您的 Builders 專案。專案的快照會儲存在建立專案時與專案相關的檔案系統中。</block>
+  <block id="1c88041df602722b072eab90c31d79ca" category="section-title">建立專案的快照</block>
+  <block id="1370537941b9a464462bf9a14972eee6" category="paragraph">您可以依照下列步驟建立專案的快照。</block>
+  <block id="a0f77c725888fef07f815b55549ad747" category="sidebar">保護專案</block>
 </blocks>

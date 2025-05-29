@@ -36,6 +36,8 @@ sidebar:
     entries:
     - title: 管理專案
       url: "/manage-projects.html"
+    - title: 保護專案
+      url: "/protect-projects.html"
     - title: 建立工作區
       url: "/create-workspaces.html"
     - title: 使用 CodeBox 自動化
