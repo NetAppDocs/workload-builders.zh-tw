@@ -136,7 +136,6 @@
   <block id="c11e3b8e48a7f97cb6cb2951dbceebea" category="section-title">Builders 中的專案和工作區</block>
   <block id="95b4a45851bf07d5318bb2244d28fcc7" category="paragraph">使用 Builders 時，您可以建立專案，並指派代表軟體環境及其成品的 Volume 。每次您建立新版軟體時，都需要重新同步磁碟區資料，並建立專案快照，將磁碟區狀態標示為已知版本。專案來源 Volume 可能會取得滾動更新，並有多個快照來標記多個版本。您可以立即將每個快照當成即時複製，這是專屬或共享的可編輯儲存庫，可供開發人員， QA 或建置程序使用。特定軟體版本內容中的複本是工作區。</block>
   <block id="5e403a4c3b152d7f395a9974ccfd4e4c" category="section-title">工作負載工廠的作業模式</block>
-  <block id="63aab450b65202ef9696852b9418f590" category="paragraph">三種不同的作業模式（ _ 基本 _ ， _ 讀取 _ 和 _ 自動化 _ ），提供靈活的選項，可在工作負載工廠內外進行部署。在 _base_ 模式下，利用程式碼片段在工作負載工廠外部使用，以零信任的方式立即獲得價值。在 _ 讀取 _ 和 _ 自動化 _ 模式中以遞增信任獲得遞增價值。</block>
   <block id="eb6e457556694fbc8d187534ac1188e1" category="inline-link-macro">工作負載工廠的作業模式</block>
   <block id="7bb004aef4b112c40189995d006d040c" category="paragraph">深入瞭解 <block ref="eda3e48a35318d9f8306be63aaa1ab6b" category="inline-link-macro-rx"></block>。</block>
   <block id="f63ee042c60cee6f631e4d8e0414dd00" category="section-title">使用工作負載原廠 CodeBox 自動化</block>
@@ -348,10 +347,6 @@
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP部落格</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="doc">更新的權限術語</block>
-  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">工作負載原廠使用者介面與文件現在使用「唯讀」來指稱讀取權限，而「讀取寫入」則指自動化權限。</block>
-  <block id="5df5d0c3be037db37091a51c0b7dd2a3" category="paragraph">您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。在工作負載工廠新增 AWS 認證（ _ 唯讀 _ 或 _ 讀取 / 寫入 _ 模式），可讓您的工作負載工廠帳戶擁有為 ONTAP 檔案系統建立和管理 FSX ，以及部署和管理 Builders 專案所需的權限。</block>
-  <block id="98c15024a0a6463353585181f922a6d8" category="list-text">您需要將 AWS 認證新增至具有讀取 / 寫入權限的工作負載工廠，這表示您將以 Builders 的讀取 / 寫入模式使用工作負載工廠。</block>
-  <block id="19e72e9857cc00ad57d29107d2e5f1fb" category="paragraph">目前不支援 _ 基本 _ 模式和 _ 唯讀 _ 模式權限。 <block ref="ced1a4827b1ea3c1da0273c3d73fdd46" category="inline-link-rx"></block></block>
   <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">2025 年 4 月 5 日</block>
   <block id="d585a12eb322284819964d656e33d798" category="summary">建立快照和複本，保護您的建置者專案。</block>
   <block id="69b33a7dae155d4aeca7bb5e1abb1cce" category="doc">保護建置商專案的 BlueXP  工作負載工廠</block>
@@ -359,4 +354,9 @@
   <block id="1c88041df602722b072eab90c31d79ca" category="section-title">建立專案的快照</block>
   <block id="1370537941b9a464462bf9a14972eee6" category="paragraph">您可以依照下列步驟建立專案的快照。</block>
   <block id="a0f77c725888fef07f815b55549ad747" category="sidebar">保護專案</block>
+  <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">工作負載工廠使用者介面和文件現在使用“只讀”來指讀取權限，使用“讀取/寫入”來指稱自動化權限。</block>
+  <block id="9d31d07638cfa37e022a93f50a24a37a" category="paragraph">三種不同的操作模式 - 基本模式、唯讀模式和讀取/寫入模式 - 為工作負載工廠內外的部署提供了靈活的選項。在 _base_ 模式下，利用程式碼片段在工作負載工廠外部使用，以零信任的方式立即獲得價值。在唯讀模式和讀/寫模式下，透過增量信任獲得增量價值。</block>
+  <block id="52170312a0c40a6c39ee9dda5284b4f0" category="paragraph">您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。以_唯讀_或_讀/寫_模式將 AWS 憑證新增至工作負載工廠，為您的工作負載工廠帳戶提供建立和管理 FSx for ONTAP 檔案系統以及部署和管理 Builders 專案所需的權限。</block>
+  <block id="07b92eb27d7b3c0fc0f57b352341acb5" category="list-text">您需要將 AWS 憑證新增至具有讀取/寫入權限的工作負載工廠，這表示您將在 Builders 的讀取/寫入模式下使用工作負載工廠。</block>
+  <block id="5e80379093f27293f5ebbde3a13ddc71" category="paragraph">目前不支援_基本_模式和_只讀_模式權限。 <block ref="ced1a4827b1ea3c1da0273c3d73fdd46" category="inline-link-rx"></block></block>
 </blocks>
