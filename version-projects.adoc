@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: version-projects.html 
+keywords: snapshot, clone, project, protect, API, version, versions, versioning 
+summary: 使用快照和克隆管理 Builders 專案的版本。 
+---
+= 管理 Builders 專案的 BlueXP 工作負載工廠版本
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+透過直接從工作負載工廠建立按需快照和克隆，您可以處理不同版本的 Builders 專案。專案的快照和克隆儲存在專案建立時關聯的檔案系統中。您也可以使用 https://console.workloads.netapp.com/api-doc["工作負載工廠 REST API"^] 。
+
+
+
+== 建立專案的快照
+
+您可以依照下列步驟建立專案的快照。
+
+.步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 在 [ 建置者 ] 方塊中，選取 [ 前往專案 ] 頁面 * 。
+. 在「專案」頁面上，針對您要建立快照的專案選取image:icon-action.png["選項按鈕"]。
+. 在產生的功能表中，選取 * 建立快照 * 。
+. 在 * 建立 SnapShot * 對話方塊中，選擇快照的名稱，然後選取 * 建立 * 。
+
+
+
+
+== 建立專案的克隆
+
+請依照以下步驟從快照複製 Builders 項目。建立克隆時，系統會建立一個新的可編輯磁碟區來包含該複製。
+
+.步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 在 [ 建置者 ] 方塊中，選取 [ 前往專案 ] 頁面 * 。
+. 在項目頁面上，選擇image:icon-action.png["選項按鈕"]對於您想要克隆的項目。
+. 在出現的選單中，選擇*建立克隆*。
+. 在「建立複製」對話方塊中，執行以下操作：
++
+.. 輸入克隆的名稱。
++
+克隆的預設名稱是項目名稱加上當前日期和時間的後綴。
+
+.. 選擇一個快照作為克隆的基礎。
+.. 選擇* Create *（建立*）。
+
+
+
+
+.結果
+工作負載工廠創建了該專案的新克隆，並且該克隆作為新專案出現在「專案」頁面上。

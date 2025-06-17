@@ -348,15 +348,29 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="doc">更新的權限術語</block>
   <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">2025 年 4 月 5 日</block>
-  <block id="d585a12eb322284819964d656e33d798" category="summary">建立快照和複本，保護您的建置者專案。</block>
-  <block id="69b33a7dae155d4aeca7bb5e1abb1cce" category="doc">保護建置商專案的 BlueXP  工作負載工廠</block>
-  <block id="0deec7e6c3ce920634e346d6726ee3dc" category="paragraph">直接從工作負載工廠建立隨選快照，保護您的 Builders 專案。專案的快照會儲存在建立專案時與專案相關的檔案系統中。</block>
   <block id="1c88041df602722b072eab90c31d79ca" category="section-title">建立專案的快照</block>
   <block id="1370537941b9a464462bf9a14972eee6" category="paragraph">您可以依照下列步驟建立專案的快照。</block>
-  <block id="a0f77c725888fef07f815b55549ad747" category="sidebar">保護專案</block>
   <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">工作負載工廠使用者介面和文件現在使用“只讀”來指讀取權限，使用“讀取/寫入”來指稱自動化權限。</block>
   <block id="9d31d07638cfa37e022a93f50a24a37a" category="paragraph">三種不同的操作模式 - 基本模式、唯讀模式和讀取/寫入模式 - 為工作負載工廠內外的部署提供了靈活的選項。在 _base_ 模式下，利用程式碼片段在工作負載工廠外部使用，以零信任的方式立即獲得價值。在唯讀模式和讀/寫模式下，透過增量信任獲得增量價值。</block>
   <block id="52170312a0c40a6c39ee9dda5284b4f0" category="paragraph">您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。以_唯讀_或_讀/寫_模式將 AWS 憑證新增至工作負載工廠，為您的工作負載工廠帳戶提供建立和管理 FSx for ONTAP 檔案系統以及部署和管理 Builders 專案所需的權限。</block>
   <block id="07b92eb27d7b3c0fc0f57b352341acb5" category="list-text">您需要將 AWS 憑證新增至具有讀取/寫入權限的工作負載工廠，這表示您將在 Builders 的讀取/寫入模式下使用工作負載工廠。</block>
   <block id="5e80379093f27293f5ebbde3a13ddc71" category="paragraph">目前不支援_基本_模式和_只讀_模式權限。 <block ref="ced1a4827b1ea3c1da0273c3d73fdd46" category="inline-link-rx"></block></block>
+  <block id="fc031ba945e09cb6053f39527ae4937f" category="doc">克隆支持</block>
+  <block id="e0fa1f53117aa72ea1061c2daaead5bc" category="paragraph">現在您可以在 BlueXP 工作負載工廠中為 Builders 複製專案。複製項目時，Builders 會根據快照建立一個新項目，其配置與原始項目相同。克隆功能對於快速建立類似項目或進行測試非常有用。您可以按照 Builders 中的說明安裝新的項目克隆。</block>
+  <block id="d88d0821a38808f607bab21c2cc4cf9e" category="inline-link">管理 Builders 專案的 BlueXP 工作負載工廠版本</block>
+  <block id="bbdb933c88b694592079931541c31eb3" category="paragraph"><block ref="bbdb933c88b694592079931541c31eb3" category="inline-link-rx"></block></block>
+  <block id="f3dffc1ab287638d7073208a231fa289" category="summary">使用快照和克隆管理 Builders 專案的版本。</block>
+  <block id="b066fd241c4e6e66ece7c7a4527218cf" category="inline-link">工作負載工廠 REST API</block>
+  <block id="00b8d5f676925ae3d9b3373616e27074" category="paragraph">透過直接從工作負載工廠建立按需快照和克隆，您可以處理不同版本的 Builders 專案。專案的快照和克隆儲存在專案建立時關聯的檔案系統中。您也可以使用<block ref="5f3a8bb73f58d34352656d43a7f37086" category="inline-link-rx"></block> 。</block>
+  <block id="527db32c9553673d65f35d38b044b7de" category="section-title">建立專案的克隆</block>
+  <block id="9a9aa1b9cb93d04e42fe69259c5b4a7e" category="paragraph">請依照以下步驟從快照複製 Builders 項目。建立克隆時，系統會建立一個新的可編輯磁碟區來包含該複製。</block>
+  <block id="ffd0b63d4491cd8691ad26a9457b8f6a" category="list-text">在項目頁面上，選擇<block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block>對於您想要克隆的項目。</block>
+  <block id="e289b398c25a5d7192096ffdb52be29f" category="list-text">在出現的選單中，選擇*建立克隆*。</block>
+  <block id="1baa1309157b6d07509f68ee5fbfebaa" category="list-text">在「建立複製」對話方塊中，執行以下操作：</block>
+  <block id="c9f8a1bc51e7ad4b5dbd3b4fd54d159e" category="list-text">輸入克隆的名稱。</block>
+  <block id="ef9eed0d84a82b3fb511fd837da2eef7" category="paragraph">克隆的預設名稱是項目名稱加上當前日期和時間的後綴。</block>
+  <block id="34ec6730fd54f4c463f31402d0ea9b83" category="list-text">選擇一個快照作為克隆的基礎。</block>
+  <block id="c53c752e3fb8fda71f585d5e8721e833" category="paragraph">工作負載工廠創建了該專案的新克隆，並且該克隆作為新專案出現在「專案」頁面上。</block>
+  <block id="f6db487abe903d447c5070f569416c3a" category="section-title">2025 年 6 月 16 日</block>
+  <block id="adbb6bf856639e7a9dcf34b22158718f" category="sidebar">管理專案版本</block>
 </blocks>
